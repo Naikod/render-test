@@ -1,7 +1,9 @@
 const express = require("express");
 
 const app = express();
-
+app.get("/", (req, res) => {
+  res.send("Oh No! You found me!. im just an sleeve to delivering Dumb Data for Livecst!, Great to see you here.")
+}
 app.get("/lp-data", (req, res) => {
   try {
     res.json({
